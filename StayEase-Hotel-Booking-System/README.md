@@ -1,10 +1,16 @@
-# StayEase – Hotel Booking System
+# StayEase – Full Stack Hotel Booking System
 
-StayEase is a full-stack hotel booking application built using **Spring Boot**, **React**, **MySQL**, and **JWT Authentication**. It provides separate customer and admin features with a secure backend and a modern responsive frontend.
+StayEase is a **full-stack hotel booking application** built using **Spring Boot**, **React**, **Node.js**, **MySQL**, and **JWT Authentication**. It features a modern responsive frontend, a secure REST API backend, and real-time notifications, providing a complete hotel booking experience for both customers and administrators.
 
 ---
 
 ## Tech Stack
+
+### Frontend
+- React 19
+- Vite
+- Tailwind CSS
+- React Router
 
 ### Backend
 - Java 21
@@ -14,11 +20,6 @@ StayEase is a full-stack hotel booking application built using **Spring Boot**, 
 - Spring Data JPA
 - MySQL
 - Maven
-
-### Frontend
-- React 19
-- Vite
-- Tailwind CSS
 
 ### Realtime
 - Node.js
@@ -32,15 +33,16 @@ StayEase is a full-stack hotel booking application built using **Spring Boot**, 
 ### Customer
 - User Registration & Login
 - JWT Authentication
-- Browse Rooms
-- Search by Room Type, Dates & Guests
-- Book Rooms
-- Mock Payment
-- View & Cancel Own Bookings
+- Browse Available Rooms
+- Search Rooms by Type, Dates & Guests
+- Room Booking
+- Mock Payment System
+- View & Cancel Bookings
 - Update Profile
+- Responsive User Interface
 
 ### Admin
-- Dashboard
+- Admin Dashboard
 - Manage Room Types
 - Manage Rooms
 - View All Bookings
@@ -54,19 +56,19 @@ StayEase is a full-stack hotel booking application built using **Spring Boot**, 
 - JWT Authentication
 - Spring Security
 - Role-Based Authorization (ADMIN / CUSTOMER)
-- Ownership Security
-- Password Encryption (BCrypt)
+- Ownership-Based Access Control
+- BCrypt Password Encryption
 
 ---
 
 ## Project Structure
 
-```
+```text
 StayEase-Hotel-Booking-System/
 │
-├── hotel-backend/      Spring Boot REST API
-├── hotel-frontend/     React + Vite
-├── hotel-realtime/     Node.js + Socket.IO
+├── hotel-backend/      # Spring Boot REST API
+├── hotel-frontend/     # React + Vite Frontend
+├── hotel-realtime/     # Node.js + Socket.IO Server
 └── README.md
 ```
 
@@ -125,8 +127,8 @@ http://localhost:5173
 
 Configure your MySQL database in:
 
-```
-src/main/resources/application.properties
+```text
+hotel-backend/src/main/resources/application.properties
 ```
 
 Example:
@@ -135,20 +137,6 @@ Example:
 spring.datasource.url=jdbc:mysql://localhost:3306/stayease
 spring.datasource.username=root
 spring.datasource.password=your_password
-```
-
----
-
-## Admin Account
-
-New registrations are created with the **CUSTOMER** role.
-
-To create an administrator account, update the user's role in the database:
-
-```sql
-UPDATE customers
-SET role = 'ADMIN'
-WHERE email = 'your-email@example.com';
 ```
 
 ---
@@ -168,6 +156,6 @@ WHERE email = 'your-email@example.com';
 
 **Aryan Patil**
 
-B.Sc. Information Technology Student
+**Full Stack Java Developer**
 
-Java Backend Developer | Spring Boot | React | MySQL
+**Tech Stack:** Java • Spring Boot • React • Node.js • MySQL
